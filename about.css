@@ -1,0 +1,87 @@
+/* About Css */
+.About {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container1 {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 0 30%;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Animation */
+.animate-about {
+    font-size: smaller;
+    display: inline-block;
+    position: relative;
+    animation: moveLeftRight 6s linear infinite;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Media Query lg animation */
+@media (min-width: 992px) {
+    .animate-about {
+        animation: moveLeftRight 12s linear infinite;
+    }
+}
